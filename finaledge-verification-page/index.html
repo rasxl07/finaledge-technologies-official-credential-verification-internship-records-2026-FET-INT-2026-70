@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Internship Credential Record | Final Edge Technologies</title>
   <meta name="description" content="Internship credential record for Mohamed Thaha Rasul M, issued by Final Edge Technologies.">
+
   <style>
     :root {
       --navy: #09265a;
@@ -15,91 +16,292 @@
       --line: #e4e8ef;
       --bg: #f4f6fa;
     }
+
     * { box-sizing: border-box; }
+
     body {
-      margin: 0; background: var(--bg); color: var(--ink);
-      font-family: Arial, Helvetica, sans-serif; line-height: 1.55;
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
     }
+
     header {
       background: linear-gradient(120deg, #071d46, #123d85);
-      color: white; border-bottom: 4px solid var(--gold);
+      color: white;
+      border-bottom: 4px solid var(--gold);
       padding: 14px 18px;
     }
-    .wrap { width: min(900px, 100% - 32px); margin: 0 auto; }
+
+    .wrap {
+      width: min(900px, 100% - 32px);
+      margin: 0 auto;
+    }
+
     .nav {
-      display: flex; align-items: center; justify-content: center;
-      min-height: 68px; position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 68px;
+      position: relative;
     }
+
     .brand-logo {
-      display: block; width: 58px; height: 58px; object-fit: contain;
-      object-position: center; border-radius: 8px; background: white;
-      padding: 3px; position: absolute; left: 0;
+      display: block;
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 8px;
+      background: white;
+      padding: 3px;
+      position: absolute;
+      left: 0;
     }
+
     .brand-name {
-      display: flex; flex-direction: column; align-items: center;
-      color: white; font-size: clamp(22px, 4vw, 30px); font-weight: 800;
-      letter-spacing: -.04em; line-height: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1;
     }
-    .brand-name strong { color: #80aaff; font-weight: 800; }
+
+    .brand-name strong {
+      color: #80aaff;
+      font-weight: 800;
+    }
+
     .brand-name small {
-      margin-top: 5px; color: #e3ebff; font-size: 10px;
-      font-weight: 700; letter-spacing: .28em;
+      margin-top: 5px;
+      color: #e3ebff;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .28em;
     }
+
     .brand-tagline {
-      margin-top: 5px; color: #c8d8fb; font-size: 9px;
-      letter-spacing: .08em; font-weight: 600;
+      margin-top: 5px;
+      color: #c8d8fb;
+      font-size: 9px;
+      letter-spacing: .08em;
+      font-weight: 600;
     }
+
     main { padding: 30px 0 42px; }
-    .topline { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline; justify-content: space-between; color: var(--muted); font-size: 13px; margin-bottom: 16px; }
-    .card { background: white; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(9,38,90,.06); }
-    .card-head { padding: 25px 25px 20px; text-align: center; border-bottom: 1px solid var(--line); }
-    .eyebrow { color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
-    h1 { color: var(--navy); margin: 7px 0 0; font-size: clamp(23px, 4vw, 32px); line-height: 1.2; }
+
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      align-items: baseline;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(9, 38, 90, .06);
+    }
+
+    .card-head {
+      padding: 25px 25px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      color: var(--navy);
+      margin: 7px 0 0;
+      font-size: clamp(23px, 4vw, 32px);
+      line-height: 1.2;
+    }
+
     .content { padding: 26px; }
-    .recipient { text-align: center; padding: 18px 0 24px; }
-    .recipient .small { color: var(--muted); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; }
-    .recipient h2 { margin: 6px 0; font-size: clamp(24px, 5vw, 36px); color: var(--navy); line-height: 1.2; }
-    .role { font-size: 20px; font-weight: 750; margin: 8px 0 0; }
-    .company { color: var(--blue); font-size: 19px; font-weight: 750; }
-    .summary { text-align: center; max-width: 690px; margin: 0 auto 24px; color: #303b4e; }
-    .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 48px; border-top: 1px solid var(--line); }
-    .field { display: flex; flex-direction: column; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--line); min-width: 0; }
-    .field:nth-child(odd) { width: calc(100% - 72px); margin-left: auto; }
-    .field:nth-child(even) { width: calc(100% - 72px); margin-left: auto; padding-left: 0; }
-    .label { min-height: 17px; color: var(--muted); text-transform: uppercase; font-size: 11px; font-weight: 800; letter-spacing: .1em; margin-bottom: 5px; }
-    .value { font-size: 15px; font-weight: 700; overflow-wrap: anywhere; }
-    .recognition { padding: 22px 26px 26px; background: #fbfcfe; border-top: 1px solid var(--line); }
-    .recognition h3 { margin: 0 0 14px; text-align: center; color: var(--navy); font-size: 14px; letter-spacing: .08em; }
-    .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 48px; }
-    .contact-item { min-width: 0; }
-    .contact-item:nth-child(odd) { width: calc(100% - 72px); margin-left: auto; }
-    .contact-item:nth-child(even) { width: calc(100% - 72px); margin-left: auto; }
-    .contact-item.location { grid-column: 1 / -1; width: 100%; margin: 0; text-align: center; }
+
+    .recipient {
+      text-align: center;
+      padding: 18px 0 24px;
+    }
+
+    .recipient .small {
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .recipient h2 {
+      margin: 6px 0;
+      font-size: clamp(24px, 5vw, 36px);
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    .role {
+      font-size: 20px;
+      font-weight: 750;
+      margin: 8px 0 0;
+    }
+
+    .company {
+      color: var(--blue);
+      font-size: 19px;
+      font-weight: 750;
+    }
+
+    .summary {
+      text-align: center;
+      max-width: 690px;
+      margin: 0 auto 24px;
+      color: #303b4e;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 0 48px;
+      border-top: 1px solid var(--line);
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      min-width: 0;
+    }
+
+    .field:nth-child(odd),
+    .field:nth-child(even) {
+      width: calc(100% - 72px);
+      margin-left: auto;
+    }
+
+    .label {
+      min-height: 17px;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      margin-bottom: 5px;
+    }
+
+    .value {
+      font-size: 15px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .recognition {
+      padding: 22px 26px 26px;
+      background: #fbfcfe;
+      border-top: 1px solid var(--line);
+    }
+
+    .recognition h3 {
+      margin: 0 0 14px;
+      text-align: center;
+      color: var(--navy);
+      font-size: 14px;
+      letter-spacing: .08em;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px 48px;
+    }
+
+    .contact-item {
+      min-width: 0;
+      width: calc(100% - 72px);
+      margin-left: auto;
+    }
+
+    .contact-item.location {
+      grid-column: 1 / -1;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+
     .contact-item.location .value { text-align: center; }
+
     .contact-item .label { margin-bottom: 3px; }
-    .contact-item a { color: var(--blue); font-weight: 700; overflow-wrap: anywhere; }
-    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 18px 0 0; }
+
+    .contact-item a {
+      color: var(--blue);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 18px 0 0;
+    }
+
     @media (max-width: 560px) {
-      .grid { grid-template-columns: 1fr; }
-      .content { padding: 20px; }
-      .card-head { padding: 22px 16px 18px; }
-      .recognition { padding: 20px; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .topline { justify-content: center; text-align: center; }
-      .field:nth-child(even), .contact-item:nth-child(even) {
-        width: 100%; margin-left: 0;
+      .grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
-      .field:nth-child(odd), .contact-item:nth-child(odd) {
-        width: 100%; margin-left: 0;
+
+      .content { padding: 20px; }
+
+      .card-head { padding: 22px 16px 18px; }
+
+      .recognition { padding: 20px; }
+
+      .topline {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .field:nth-child(odd),
+      .field:nth-child(even),
+      .contact-item:nth-child(odd),
+      .contact-item:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
       }
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="wrap">
       <nav class="nav" aria-label="Primary navigation">
-        <img class="brand-logo" src="assets/final-edge-mark.jpg" alt="Final Edge Technologies logo">
+        <!-- Keep this image in the same folder as index.html -->
+        <img
+          class="brand-logo"
+          src="final-edge-mark.jpg"
+          alt="Final Edge Technologies logo"
+          onerror="this.style.display='none'"
+        >
+
         <div class="brand-name" aria-label="Final Edge Technologies">
           <span>Final<strong>Edge</strong></span>
           <small>TECHNOLOGIES</small>
@@ -132,10 +334,13 @@
         </div>
 
         <p class="summary">
-          The internship was completed from <strong>1 August 2026 &ndash; 31 August 2026</strong>
-          for a duration of <strong>30 days</strong> in <strong>Online mode</strong>.
-          During this internship, the candidate has demonstrated dedication, hard work,
-          and a strong willingness to learn. We wish the candidate all the best for future endeavors.
+          The internship was completed from
+          <strong>1 August 2026 &ndash; 31 August 2026</strong>
+          for a duration of <strong>30 days</strong> in
+          <strong>Online mode</strong>. During this internship, the
+          candidate has demonstrated dedication, hard work, and a
+          strong willingness to learn. We wish the candidate all the
+          best for future endeavors.
         </p>
 
         <div class="grid">
@@ -143,30 +348,37 @@
             <div class="label">Certificate ID</div>
             <div class="value">FET/INT/2026/70</div>
           </div>
+
           <div class="field">
             <div class="label">Certificate Date</div>
             <div class="value">5 September 2026</div>
           </div>
+
           <div class="field">
             <div class="label">Internship Role</div>
             <div class="value">Artificial Intelligence Intern</div>
           </div>
+
           <div class="field">
             <div class="label">Internship Mode</div>
             <div class="value">Online</div>
           </div>
+
           <div class="field">
             <div class="label">Internship Period</div>
             <div class="value">1 August 2026 &ndash; 31 August 2026</div>
           </div>
+
           <div class="field">
             <div class="label">Duration</div>
             <div class="value">30 days</div>
           </div>
+
           <div class="field">
             <div class="label">Founder &amp; CEO</div>
             <div class="value">Nithish Vaduganathan</div>
           </div>
+
           <div class="field">
             <div class="label">Organization</div>
             <div class="value">Final Edge Technologies</div>
@@ -176,24 +388,34 @@
 
       <div class="recognition">
         <h3>COMPANY INFORMATION</h3>
+
         <div class="contact-grid">
           <div class="contact-item">
             <div class="label">Website</div>
-            <a href="https://www.finaledgetechnologies.me/">finaledgetechnologies.me</a>
+            <a href="https://www.finaledgetechnologies.me/">
+              finaledgetechnologies.me
+            </a>
           </div>
+
           <div class="contact-item">
             <div class="label">Credential inquiries</div>
-            <a href="mailto:finaledgetechnologies@gmail.com">finaledgetechnologies@gmail.com</a>
+            <a href="mailto:finaledgetechnologies@gmail.com">
+              finaledgetechnologies@gmail.com
+            </a>
           </div>
+
           <div class="contact-item location">
-            <div class="value">Thiruvarur, Tamil Nadu, India &ndash; 609503</div>
+            <div class="value">
+              Thiruvarur, Tamil Nadu, India &ndash; 609503
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <footer>
-      Credential record issued by Final Edge Technologies. Contact the organization for credential-related inquiries.
+      Credential record issued by Final Edge Technologies.
+      Contact the organization for credential-related inquiries.
     </footer>
   </main>
 </body>
